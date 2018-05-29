@@ -1,7 +1,7 @@
 <article class="recipient js_recipient" id="<%= recipient.id %>">
   <input type="checkbox" id="<%= recipient.id %>" class="recipient__input js_recipient-input">
 
-  <span class="recipient__input-placeholder" role="placeholder"></span>
+  <span class="recipient__input-placeholder" role="input placeholder"></span>
 
   <%= image_tag 'image-placeholder-small-green.svg', class: "recipient__image" %>
 
@@ -11,5 +11,5 @@
     <p class="recipient__text"><%= recipient.email %></p>
   </section>
 
-  <label for="<%= recipient.name %>" class="recipient__label"><%= prices[index]%></label>
+  <label for="<%= recipient.id %>" class="recipient__label"><%= prices[index]%></label>
 </article>
