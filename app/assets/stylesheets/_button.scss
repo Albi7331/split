@@ -1,28 +1,31 @@
-.button--cancel {
-	width:30px;
-	height:30px;
-	overflow:hidden;
-	display:block;
-	background-color:var(--cancel);
-	flex-shrink:0;
-	color:transparent;
+.button--cancel{
+	width: 30px;
+	height: 30px;
+	overflow: hidden;
+	display: block;
+	background-color: #d42027;
+	flex-shrink: 0;
+	color: transparent;
 	border-radius: 100%;
-	position:relative;
+	position: relative;
 }
+
 .button--cancel::before,
 .button--cancel::after{
-	width: 80%;
-	height:3px;
-	position:absolute;
+	width: 50%;
+	height: 3px;
+	position: absolute;
 	content: '';
 	background-color: white;
-	top:calc((100% - 3px)/2);
-	left:calc((100% - 380%)/2);
-	border-radius:5%;
+	top: calc((100% - 3px)/2);
+	left: calc((100% - 50%)/2);
+	border-radius: 5px;
 }
+
 .button--cancel::before{
 	transform: rotate(45deg);
 }
+
 .button--cancel::after{
-	transform: rotate(45deg);
+	transform: rotate(-45deg);
 }
