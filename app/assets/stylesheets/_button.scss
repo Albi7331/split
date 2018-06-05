@@ -1,13 +1,46 @@
+.button {
+	display: inline-block;
+	background-color: var(--accent);
+	color: var(--white);
+	font-size: 14px;
+	line-height: 40px;
+	height:40px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	max-width:100%;
+	padding:0 20px;
+	border-radius: 100px;
+	text-decoration:none;
+	text-transform:uppercase;
+	letter-spacing:.3px;
+	font-weight:600;
+	border:0;
+	box-shadow: 0 9px 21px 0 rgba(#1c4bfb, .3);
+	flex-shrink: 0;
+
+	transition: opacity .3s ease-in-out;
+
+}
+
+.button:active{
+	transform: translateY(3px);
+}
+
 .button--cancel{
 	width: 30px;
 	height: 30px;
-	overflow: hidden;
-	display: block;
 	background-color: #d42027;
-	flex-shrink: 0;
 	color: transparent;
 	border-radius: 100%;
+	box-shadow:none;
+	padding:0;
 	position: relative;
+}
+.button--flat{
+	color: var(--accent);
+	background-color:transparent;
+	box-shadow:none;
 }
 
 .button--cancel::before,
@@ -28,4 +61,7 @@
 
 .button--cancel::after{
 	transform: rotate(-45deg);
+}
+.button:hover, .button--cancel:hover, .button--flat:hover{
+opacity: .6;	
 }
